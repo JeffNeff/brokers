@@ -1,0 +1,8 @@
+  trigger1:
+    target:
+      url: http://sockeye:8080
+      deliveryOptions:
+        retry: 5
+        backoffDelay: PT5S
+        backoffPolicy: constant
+        deadLetterURL: http://dls:8080
